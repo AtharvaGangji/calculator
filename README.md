@@ -1,3 +1,4 @@
 # calculator
 
--- Work in Prograes --
+## Work in Progress
+
