@@ -1,12 +1,18 @@
 import tkinter as tk
 from tkinter import *
 from tkinter import messagebox
+from playsound import playsound
 
 # funtions
+
+
+def play_sound():
+    playsound('click-sound.mp3')
 
 def input_number(number, mad):
 
    global val
+   play_sound()
    # join string
    val = val + str(number)
    mad.set(val)
@@ -14,6 +20,7 @@ def input_number(number, mad):
 def evaluate(mad):
     global val
     # evaluate the numbers
+    play_sound()
     try:
         result = str(eval(val))
         # showing the result
@@ -26,6 +33,7 @@ def evaluate(mad):
 
 def clear_input_field(equation):
    global val
+   play_sound()
    val = ""
    equation.set(val)
 
